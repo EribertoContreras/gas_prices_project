@@ -31,14 +31,15 @@ def political_data():
     return df 
 
 def gas_data():
+    "it is necessary to add a date and year collumn so we can join later using 'year' cloumns"
     # downloading csv
     df = pd.read_csv("PET_PRI_GND_DCUS_NUS_W.csv",encoding='cp1252')
-     #making a date collumn to join gas_prices
-    df['t'] = pd.to_datetime(df['Date'],format='%m/%d/%Y')
-    #adding a date column with only year
-    df['Year'] = df.t.dt.year
-    #droppping other darte like columns to only use one.
-    df = df.drop(columns = ['Date', 't'])
+    #making a Datetime column for future
+    df['Date'] = pd.to_datetime(df['Date'],format='%m/%d/%Y')
+
+     #making a date column with only year
+    df['Year'] = df.Date.dt.year
+    df = pd.DataFrame(df)
     return df
     
 def all_gas_data():
