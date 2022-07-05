@@ -34,8 +34,7 @@ def prep_gas_data(df):
     #dropping gas collumns that are not needed.
     df = df.drop(columns=['A2','A3','R2','R3','M2','M3','P2','P3','R1','M1','P1'])
     #state info to drop
-    df = df.drop(columns=['Year',
-                            'State.Minimum.Wage.2020.Dollars',
+    df = df.drop(columns=['State.Minimum.Wage.2020.Dollars',
                             'Federal.Minimum.Wage.2020.Dollars',
                             'Effective.Minimum.Wage.2020.Dollars',
                             'CPI.Average',
@@ -44,7 +43,7 @@ def prep_gas_data(df):
                             'Department.Of.Labor.Cleaned.Low.Value.2020.Dollars',
                             'Department.Of.Labor.Cleaned.High.Value',
                             'Department.Of.Labor.Cleaned.High.Value.2020.Dollars',
-                            'Footnote','MinWageIndexedLastRaiseYear','State.Minimum.Wage','FederalMinimumWage'])
+                            'Footnote','MinWageIndexedLastRaiseYear','FederalMinimumWage'])
     #renaming columns
     df.rename(columns = {'A1':'gasoline', 'D1':'diesel'}, inplace = True)
     # convert our date column to datetime type
@@ -56,7 +55,8 @@ def prep_gas_data(df):
     df['gas_state_min_dif'] = df.gasoline / df.state_wage
     df['diesel_fed_min_dif'] = df.diesel / df.fed_wage
     df['diesel_state_min_dif'] = df.diesel / df.state_wage
-    df = df[(df.diesel_state_min_dif >= 0.15495934959349592)&(df.replace([np.inf, -np.inf], np.nan).notnull().all(axis=1))]
+    df = df[(df.diesel_state_min_dif >= 0.15495934959349592)&(df.replace([np.inf, -np.inf], np.nan).notnull().all(axis=1))&
+            ( df['State.Minimum.Wage'] >= 4.300000)]
     return df
 
 
