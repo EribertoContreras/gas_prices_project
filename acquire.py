@@ -36,7 +36,6 @@ def gas_data():
     df = pd.read_csv("PET_PRI_GND_DCUS_NUS_W.csv",encoding='cp1252')
     #making a Datetime column for future
     df['Date'] = pd.to_datetime(df['Date'],format='%m/%d/%Y')
-
      #making a date column with only year
     df['Year'] = df.Date.dt.year
     df = pd.DataFrame(df)
