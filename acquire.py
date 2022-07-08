@@ -15,6 +15,12 @@ import warnings
 warnings.filterwarnings('ignore')
 import requests
 
+
+" to download this file please go to the website marked down below and follow the acquire functions below"
+# https://www.kaggle.com/datasets/mruanova/us-gasoline-and-diesel-retail-prices-19952021
+# https://www.kaggle.com/datasets/lislejoem/us-minimum-wage-by-state-from-1968-to-2017
+# https://www.kaggle.com/datasets/brandonconrady/us-minimum-wage-1938-2020
+
 def state_min_wage():
     #downloading csv
     df =  pd.read_csv("Minimum Wage Data.csv",encoding='cp1252')
