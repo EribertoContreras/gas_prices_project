@@ -1,5 +1,17 @@
-# gas_prices_project
+# Finding Patterns in Gasoline & Diesel Prices Over The Years
+   by Eriberto Contreras
+***
+# Plan:
+- Acquire
+- Prepare
+- Explore
+- Model
+- Summarize Conclusions and Recommendations.
 
+***
+
+# Description:
+   Over the years the prices of gasoline and diesel have increased and have fluctuated without any clear answers as to why. Just today we have prices ranging from the low 4 dollar range to the high 7 dollar ranges based on the state that one resides in. I will be using some time series analysis to see if we can find key factors from our past which can let us make better planning decicions in the future.
 # Overview:
 - Purpose: To identify paterns in gas prices over time to predict future prices.
 - Data: The prices that we will be looking at today are the ideal median price over the USA from the year 1995-2021
@@ -28,9 +40,15 @@ Data was collected in the following links:
 During the process of acquiring fuel, federal wage, and state minimum wage data, I realize that for this specific time series analysis we would only require the prices of gasoline & Diesel prices over the last couple of years. The existing data frame that resulted from acquiring the data can be successfully used for future data science experiments and other types of modeling.
 
 Throuhgout the exploration and visualization process I realize that extreme economic events like the 2008 economic crash played huge factors in gas price drops. 
+# Project Summary:
+During the process of acquiring fuel, federal wage, and state minimum wage data, I realize that for this specific time series analysis we would only require the prices of gasoline & Diesel prices over the last couple of years. The existing data frame that resulted from acquiring the data can be successfully used for future data science experiments and other types of modeling.
+
+Throuhgout the exploration and visualization process I realize that extreme economic events like the 2008 economic crash played huge factors in gas price drops. 
 # Conclusion
 In conclusion, because of extreme factors like this I was not successful in making a good predictive model that had a huge success rate.
 
 My recommendations for the future would be to collect more data over the next comming years, wait to see if results of the current inflation in our economic state returns a similar result as the last and build a better predictive figure and model.
-- The other recommendation that we can explore is to use other modeling and explorartion techniques using relationships that exists in the original csv file to predict the prices.
+
+
+The other recommendation that we can explore is to use other modeling and explorartion techniques using relationships that exists in the original csv file to predict the prices.
 ***
