@@ -1,5 +1,17 @@
-# gas_prices_project
+# Finding Patterns in Gasoline & Diesel Prices Over The Years
+   by Eriberto Contreras
+***
+# Plan:
+- Acquire
+- Prepare
+- Explore
+- Model
+- Summarize Conclusions and Recommendations.
 
+***
+
+# Description:
+   Over the years the prices of gasoline and diesel have increased and have fluctuated without any clear answers as to why. Just today we have prices ranging from the low 4 dollar range to the high 7 dollar ranges based on the state that one resides in. I will be using some time series analysis to see if we can find key factors from our past which can let us make better planning decicions in the future.
 # Overview:
 - Purpose: To identify paterns in gas prices over time to predict future prices.
 - Data: The prices that we will be looking at today are the ideal median price over the USA from the year 1995-2021
