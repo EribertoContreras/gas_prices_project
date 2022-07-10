@@ -40,9 +40,15 @@ Data was collected in the following links:
 During the process of acquiring fuel, federal wage, and state minimum wage data, I realize that for this specific time series analysis we would only require the prices of gasoline & Diesel prices over the last couple of years. The existing data frame that resulted from acquiring the data can be successfully used for future data science experiments and other types of modeling.
 
 Throuhgout the exploration and visualization process I realize that extreme economic events like the 2008 economic crash played huge factors in gas price drops. 
+# Project Summary:
+During the process of acquiring fuel, federal wage, and state minimum wage data, I realize that for this specific time series analysis we would only require the prices of gasoline & Diesel prices over the last couple of years. The existing data frame that resulted from acquiring the data can be successfully used for future data science experiments and other types of modeling.
+
+Throuhgout the exploration and visualization process I realize that extreme economic events like the 2008 economic crash played huge factors in gas price drops. 
 # Conclusion
 In conclusion, because of extreme factors like this I was not successful in making a good predictive model that had a huge success rate.
 
 My recommendations for the future would be to collect more data over the next comming years, wait to see if results of the current inflation in our economic state returns a similar result as the last and build a better predictive figure and model.
-- The other recommendation that we can explore is to use other modeling and explorartion techniques using relationships that exists in the original csv file to predict the prices.
+
+
+The other recommendation that we can explore is to use other modeling and explorartion techniques using relationships that exists in the original csv file to predict the prices.
 ***
